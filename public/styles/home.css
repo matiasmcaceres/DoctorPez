@@ -1,0 +1,165 @@
+:root {
+  --fondo: #040807;
+  --colorSecundario:#861111;
+  --ubuntu: 'Ubuntu',
+  sans-serif;
+  --cinzel: 'Cinzel',
+  serif;
+  --josefin: 'Josefin Slab',
+  serif;
+}
+
+
+.bannerHome{
+  position: relative;
+}
+
+.bannerHome img{
+  width: 100%;
+}
+
+.bannerHome div{
+  width: 100%;
+  height: 170%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  padding: 50px;
+}
+
+.bannerHome h1,p{
+font-family: var(--cinzel);
+color: white;
+font-size: 2.2vw;
+letter-spacing: 1.4px;
+}
+
+/* ----------------------------------------------------------------------- */
+/* ---------------- CREA ACUARIO ---------------- */
+/* ----------------------------------------------------------------------- */
+
+.creaAcuario {
+  background-color: #010000;
+  padding: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.creaAcuario div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+}
+
+.creaAcuario img {
+  width: 300px;
+  height: 300px;
+}
+
+.creaAcuario p{
+  font-size: 20px;
+}
+
+.creaAcuario a{
+  color: white;
+  background: var(--colorSecundario);
+  width: 300px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 50px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.creaAcuario a:hover{
+  color: #861111;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 1);
+  font-weight: 600;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+/* ----------------------------------------------------------------------- */
+/* ---------------- Novedades ---------------- */
+/* ----------------------------------------------------------------------- */
+.novedades{
+  margin: auto;
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  text-align: center;
+}
+
+.novedades div{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+}
+
+
+
+.novedades img{
+  width: 100%;
+}
+
+.novedades h2{
+  margin-bottom: 10px;
+  font-size: 2.8vw;
+}
+
+.novedades a{
+  background: var(--fondo);
+  border-radius: 15px;
+  padding: 10px;
+  color: white;
+  font-size: 1.5vw;
+}
+.novedades a:hover{
+  background: #861111;
+}
+
+/* ----------------------------------------------------------------------- */
+/* ---------------- RESPONSIVE ---------------- */
+/* ----------------------------------------------------------------------- */
+
+@media screen and (max-width:1024px){
+  .creaAcuario p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .creaAcuario{
+    flex-direction: column;
+  }
+  .creaAcuario div a {
+    width: 100%;
+  }
+  .creaAcuario img{
+    display: none;
+  }
+  .novedades{
+    flex-direction: column;
+  }
+  .novedades h2 {
+    font-size: 20px;
+  }
+  .novedades a{
+    font-size: 16px;
+  }
+}
+

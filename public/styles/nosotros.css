@@ -1,0 +1,21 @@
+.nosotros-container p{
+  text-align: justify;
+}
+
+.javier{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+}
+
+.javier img{
+  width: 200px;
+  margin: 20px;
+  border-radius: 100%;
+}
+
+.info-javier h3,
+.info-javier p{
+  text-align: center;
+}

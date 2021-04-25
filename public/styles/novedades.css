@@ -1,0 +1,12 @@
+.articulos {
+  width: 100%;
+}
+
+.articulo img{
+  width: 100%;
+  margin: 50px 0;
+}
+
+.articulo img:hover{
+  box-shadow: 0 0 10px 0 white;
+}

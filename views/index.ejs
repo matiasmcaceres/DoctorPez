@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<%- include("partials/head.ejs")  %>
+
+<body>
+  <%- include("partials/header.ejs")  %>
+  <div class="home-container">
+    <div class="fondo"></div>
+    <div class="bannerHome">
+      <img src="images/pezHome.png" alt="">
+      <div>
+        <h1>Crear un acuario es facil, si sabes como</h1>
+        <p>Te ayudamos para que tu primer acuario sea como te guste</p>
+      </div>
+    </div>
+
+    <div class="creaAcuario">
+      <img src="/images/1p.jpg" alt="">
+      <div>
+        <p>Tener un acuario de agua dulce es una maravillosa forma de traer la naturaleza a tu hogar. Instalar un
+          acuario es más fácil de lo que parece a simple vista. La gran cantidad de aparatos y accesorios en los
+          estantes de las tiendas de mascotas es intimidante, pero realmente lo único que necesitas son los conceptos
+          básicos para empezar. Verás a tus peces nadando felices en su nuevo acuario en muy poco tiempo.</p>
+        <a href="#">Quiero tener mi acuario</a>
+      </div>
+    </div>
+
+    <div class="novedades">
+      <div>
+        <img src="/images/novedadesHome.jpg" alt="">
+        <h2>Novedades</h2>
+        <a href="#">Ver Novedades</a>
+      </div>
+      <div>
+        <img src="/images/ofertasHome.jpg" alt="">
+        <h2>Ofertas</h2>
+        <a href="#">Ver Ofertas</a>
+      </div>
+      <div>
+        <img src="/images/MantenimientoDeAcuarioHome.jpg" alt="">
+        <h2>Mantenimiento de Acuario</h2>
+        <a href="#">Más Información</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <%- include("partials/footer.ejs")  %>
+  <script>
+    $('.icon').click(function () {
+      $('span').toggleClass("cancel");
+    });
+  </script>
+
+</body>
+
+</html>
